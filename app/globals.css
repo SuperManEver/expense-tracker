@@ -5,9 +5,16 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-rgb: #EEF3EC;
+  --foreground-hex: #EEF3EC;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --grey-300-hex: #979CAD;
+  --grey-500-hex: #767B8B;
+  --grey-700-hex: #62615E;
+  --green-4000hex: #3EB961;
+  --green-600-hex: #089625;
+
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -51,7 +58,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  background-color: var(--foreground-rgb);
+  background-color: var(--foreground-hex);
 }
 
 a {
@@ -59,3 +66,6 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}

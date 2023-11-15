@@ -1,17 +1,18 @@
+// vendor
 import Image from 'next/image';
-import styles from './page.module.css';
+
+// ui
+import MainNavbar from '@/app/components/main-navbar';
+
+// styles
+import css from './page.module.css';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <header>
+    <main className={css.main}>
+      <header className={css.header}>
         <h3>Expense Tracker</h3>
-
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Price</li>
-        </ul>
+        <MainNavbar />
       </header>
       Landing
     </main>
