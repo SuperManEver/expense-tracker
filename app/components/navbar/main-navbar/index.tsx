@@ -9,7 +9,7 @@ function MainNavbar() {
     <ul className={css.root}>
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
-      <Link href="/price">Price</Link>
+      <Link href="/login">Login</Link>
     </ul>
   );
 }

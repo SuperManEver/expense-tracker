@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Dosis } from 'next/font/google';
 import clsx from 'clsx';
+
+// ui
+import MainNavbar from '@/app/components/navbar/main-navbar';
 
 // styles
 import './globals.css';
-import styles from './page.module.css';
+import css from './page.module.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Dosis({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -20,8 +23,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className, styles.pageContent)}>
-        {children}
+      <body className={clsx(inter.className, css.pageContent)}>
+        <main className={css.main}>
+          <header className={css.header}>
+            <h3 className={css.title}>Expenso</h3>
+            <MainNavbar />
+          </header>
+          <section className={css.content}>{children}</section>
+        </main>
       </body>
     </html>
   );
