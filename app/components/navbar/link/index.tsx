@@ -13,9 +13,11 @@ interface IProps {
 
 function NavbarLink({ href, children, className }: IProps) {
   return (
-    <Link className={cn(css.root, className)} href={href}>
-      {children}
-    </Link>
+    <div>
+      <Link className={cn(css.root, className)} href={href}>
+        {children}
+      </Link>
+    </div>
   );
 }
 

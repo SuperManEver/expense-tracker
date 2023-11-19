@@ -1,0 +1,43 @@
+.root {
+  /* colors */
+  color: var(--green-600-hex);
+  background-color: var(--green-300-hex);
+  border: 1px solid var(--green-600-hex);
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+
+  align-items: center;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  min-height: 1rem;
+  padding: calc(0.675rem - 1px) calc(1.2rem - 1px);
+  position: relative;
+
+  /* animation */
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.root:hover,
+.root:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.root:hover {
+  transform: translateY(-1px);
+}
+
+.root:active {
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}

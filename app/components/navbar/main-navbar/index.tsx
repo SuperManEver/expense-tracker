@@ -1,5 +1,6 @@
 // ui
 import Link from '@/app/components/navbar/link';
+import Button from '@/app/components/ui/button';
 
 // styles
 import css from './styles.module.css';
@@ -10,6 +11,8 @@ function MainNavbar() {
       <Link href="/">Home</Link>
       <Link href="/about">About</Link>
       <Link href="/login">Login</Link>
+
+      <Button className={css.button}>Get Started</Button>
     </ul>
   );
 }
