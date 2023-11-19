@@ -5,16 +5,15 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
-  --foreground-hex: #EEF3EC;
+  --foreground-hex: #eef3ec;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --grey-300-hex: #979CAD;
-  --grey-500-hex: #767B8B;
-  --grey-700-hex: #62615E;
-  --green-4000hex: #3EB961;
+  --grey-300-hex: #979cad;
+  --grey-500-hex: #767b8b;
+  --grey-700-hex: #62615e;
+  --green-400hex: #3eb961;
   --green-600-hex: #089625;
-
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -45,8 +44,16 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
-}
 
+  --max-width: 1024px;
+
+  --xs-width: 0;
+  --sm-width: 576px;
+  --md-width: 768px;
+  --lg-width: 992px;
+  --xl-width: 1200px;
+  --xxl-width: 1400px;
+}
 
 * {
   box-sizing: border-box;
@@ -68,4 +75,9 @@ a {
 
 li {
   list-style: none;
+}
+
+.page-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }

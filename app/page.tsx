@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <main className={css.main}>
       <header className={css.header}>
-        <h3>Expense Tracker</h3>
+        <h3 className={css.title}>Expenso</h3>
         <MainNavbar />
       </header>
-      Landing
+      <section className={css.content}>Landing</section>
     </main>
   );
 }
