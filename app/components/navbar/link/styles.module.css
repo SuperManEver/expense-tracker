@@ -1,0 +1,12 @@
+.root {
+  color: var(--grey-500-hex);
+  font-weight: 600;
+  margin: 0 2rem;
+  padding-bottom: 1rem;
+  text-underline-offset: 6px;
+}
+
+.root:hover {
+  color: var(--green-400-hex);
+  text-decoration: underline;
+}

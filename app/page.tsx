@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 // ui
-import MainNavbar from '@/app/components/main-navbar';
+import MainNavbar from '@/app/components/navbar/main-navbar';
 
 // styles
 import css from './page.module.css';
