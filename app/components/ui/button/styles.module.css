@@ -2,7 +2,7 @@
   /* colors */
   color: var(--green-600-hex);
   background-color: var(--green-300-hex);
-  border: 1px solid var(--green-600-hex);
+  border: 1px solid transparent;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
 
   align-items: center;
@@ -26,6 +26,14 @@
   touch-action: manipulation;
   vertical-align: baseline;
   width: auto;
+}
+
+.root.solid {
+  /* default styles */
+}
+
+.root.bordered {
+  border: 1px solid var(--green-600-hex);
 }
 
 .root:hover,
