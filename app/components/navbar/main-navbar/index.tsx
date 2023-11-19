@@ -12,9 +12,9 @@ function MainNavbar() {
       <Link href="/about">About</Link>
       <Link href="/login">Login</Link>
 
-      <Button variant="bordered" className={css.button}>
-        Get Started
-      </Button>
+      <Link href="/login">
+        <Button variant="bordered">Get Started</Button>
+      </Link>
     </ul>
   );
 }

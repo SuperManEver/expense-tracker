@@ -7,13 +7,13 @@ import css from './styles.module.css';
 
 interface IProps {
   href: string;
-  children: string;
+  children: React.ReactNode;
   className?: string;
 }
 
 function NavbarLink({ href, children, className }: IProps) {
   return (
-    <div>
+    <div className={css.wrapper}>
       <Link className={cn(css.root, className)} href={href}>
         {children}
       </Link>
