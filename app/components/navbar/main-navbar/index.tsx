@@ -12,7 +12,7 @@ function MainNavbar() {
       <Link href="/about">About</Link>
       <Link href="/sign-in">Login</Link>
 
-      <Link href="/login">
+      <Link href="/expenses">
         <Button variant="bordered">Get Started</Button>
       </Link>
     </ul>
