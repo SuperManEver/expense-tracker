@@ -1,5 +1,5 @@
 function NewUserPage() {
-  return <div>Helper page for syncing with clerk</div>
+  return <div>New User Page stub</div>
 }
 
 export default NewUserPage
