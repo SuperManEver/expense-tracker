@@ -1,5 +1,13 @@
 import { SignIn } from '@clerk/nextjs'
 
-export default function Page() {
-  return <SignIn />
+import css from './styles.module.css'
+
+function Page() {
+  return (
+    <div className={css.wrapper}>
+      <SignIn />
+    </div>
+  )
 }
+
+export default Page
