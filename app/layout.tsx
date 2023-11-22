@@ -22,7 +22,7 @@ interface IProps {
   children: React.ReactNode
 }
 
-export default function RootLayout({ children }: IProps) {
+async function RootLayout({ children }: IProps) {
   return (
     <ClerkProvider>
       <html lang="en">
@@ -39,3 +39,5 @@ export default function RootLayout({ children }: IProps) {
     </ClerkProvider>
   )
 }
+
+export default RootLayout
