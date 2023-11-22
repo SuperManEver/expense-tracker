@@ -11,7 +11,9 @@ const createNewUser = async () => {
     },
   })
 
+  console.log('--------------------------------------------------')
   console.log('matched user: ', match)
+  console.log('--------------------------------------------------')
 
   if (!match && user) {
     await prisma.user.create({
@@ -26,7 +28,7 @@ const createNewUser = async () => {
 }
 
 const NewUser = async () => {
-  await createNewUser()
+  // await createNewUser()
 
   return <div>...loading</div>
 }

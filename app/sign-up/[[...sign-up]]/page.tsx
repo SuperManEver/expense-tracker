@@ -5,7 +5,13 @@ import css from './styles.module.css'
 function Page() {
   return (
     <div className={css.wrapper}>
-      <SignUp />
+      <SignUp
+        path="/sign-up"
+        routing="path"
+        signInUrl="/sign-in"
+        redirectUrl="/new-user"
+        afterSignUpUrl="/new-user"
+      />
     </div>
   )
 }
