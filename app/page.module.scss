@@ -24,6 +24,7 @@
 }
 
 .heroSection {
+  margin-bottom: 3rem;
   display: grid;
   grid-template-columns: 55% 45%;
 
@@ -44,7 +45,37 @@
 
   .text {
     color: var(--grey-700-hex);
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     width: 70%;
+  }
+
+  .linkWrapper {
+    margin-left: 0;
+  }
+}
+
+.features {
+  padding: 1.6rem 0;
+  background-color: var(--green-400-hex);
+  display: flex;
+  justify-content: center;
+
+  .title {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.025rem;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .sellingPointsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    .sellingPoint {
+      display: flex;
+    }
   }
 }

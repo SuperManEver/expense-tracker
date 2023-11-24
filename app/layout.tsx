@@ -23,7 +23,7 @@ async function RootLayout({ children }: IProps) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={clsx(inter.className, css.pageContent)}>
+        <body className={inter.className}>
           <main className={css.main}>{children}</main>
         </body>
       </html>
