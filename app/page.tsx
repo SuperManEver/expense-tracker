@@ -7,6 +7,7 @@ import Link from '@/app/components/navbar/link'
 import Navbar from '@/app/components/navbar/main-navbar'
 import Button from '@/app/components/ui/button'
 import Image from 'next/image'
+import { PowerIcon } from '@heroicons/react/24/outline'
 
 // styles
 import css from './page.module.scss'
@@ -54,18 +55,20 @@ function Landing() {
 
       <section className={css.features}>
         <div className={css.pageContent}>
-          <h3 className={css.title}>
+          <h3 className={css.sectionTitle}>
             Expenso helps you to take your finances under your control
           </h3>
 
           <section className={css.sellingPointsContainer}>
             <article className={css.sellingPoint}>
-              <div>icon</div>
+              <div className={css.iconWrapper}>
+                <PowerIcon className={css.icon} />
+              </div>
 
               <div>
-                <p>Effortless Habitual Tracking</p>
+                <p className={css.title}>Effortless Habitual Tracking</p>
 
-                <p>
+                <p className={css.subtitle}>
                   Simplify your financial life with our effortless expense
                   tracking. Easily monitor your spending habits to gain valuable
                   insights into where your money goes, allowing you to make
@@ -75,12 +78,14 @@ function Landing() {
             </article>
 
             <article className={css.sellingPoint}>
-              <div>icon</div>
+              <div className={css.iconWrapper}>
+                <PowerIcon className={css.icon} />
+              </div>
 
               <div>
-                <p>Personalized Budget Management</p>
+                <p className={css.title}>Personalized Budget Management</p>
 
-                <p>
+                <p className={css.subtitle}>
                   Take control of your finances with our personalized budgeting
                   tools. Set realistic spending limits, track your progress, and
                   achieve your financial goals with ease.
@@ -89,12 +94,14 @@ function Landing() {
             </article>
 
             <article className={css.sellingPoint}>
-              <div>icon</div>
+              <div className={css.iconWrapper}>
+                <PowerIcon className={css.icon} />
+              </div>
 
               <div>
-                <p>Goal-Oriented Financial Planning</p>
+                <p className={css.title}>Goal-Oriented Financial Planning</p>
 
-                <p>
+                <p className={css.subtitle}>
                   Turn dreams into reality with our goal-oriented financial
                   planning. Whether it`s saving for a vacation, a home, or
                   retirement, our app helps you stay on track and celebrate your
