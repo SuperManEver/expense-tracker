@@ -63,9 +63,14 @@ function Landing() {
               <div>icon</div>
 
               <div>
-                <p>Title</p>
+                <p>Effortless Habitual Tracking</p>
 
-                <p>Description</p>
+                <p>
+                  Simplify your financial life with our effortless expense
+                  tracking. Easily monitor your spending habits to gain valuable
+                  insights into where your money goes, allowing you to make
+                  informed decisions.
+                </p>
               </div>
             </article>
 
@@ -73,9 +78,13 @@ function Landing() {
               <div>icon</div>
 
               <div>
-                <p>Title</p>
+                <p>Personalized Budget Management</p>
 
-                <p>Description</p>
+                <p>
+                  Take control of your finances with our personalized budgeting
+                  tools. Set realistic spending limits, track your progress, and
+                  achieve your financial goals with ease.
+                </p>
               </div>
             </article>
 
@@ -83,9 +92,14 @@ function Landing() {
               <div>icon</div>
 
               <div>
-                <p>Title</p>
+                <p>Goal-Oriented Financial Planning</p>
 
-                <p>Description</p>
+                <p>
+                  Turn dreams into reality with our goal-oriented financial
+                  planning. Whether it`s saving for a vacation, a home, or
+                  retirement, our app helps you stay on track and celebrate your
+                  financial achievements.
+                </p>
               </div>
             </article>
           </section>
