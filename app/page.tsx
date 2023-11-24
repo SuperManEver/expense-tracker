@@ -7,7 +7,11 @@ import Link from '@/app/components/navbar/link'
 import Navbar from '@/app/components/navbar/main-navbar'
 import Button from '@/app/components/ui/button'
 import Image from 'next/image'
-import { PowerIcon } from '@heroicons/react/24/outline'
+import {
+  ChartBarSquareIcon,
+  BanknotesIcon,
+  RocketLaunchIcon,
+} from '@heroicons/react/24/outline'
 
 // styles
 import css from './page.module.scss'
@@ -62,7 +66,7 @@ function Landing() {
           <section className={css.sellingPointsContainer}>
             <article className={css.sellingPoint}>
               <div className={css.iconWrapper}>
-                <PowerIcon className={css.icon} />
+                <ChartBarSquareIcon className={css.icon} />
               </div>
 
               <div>
@@ -79,7 +83,7 @@ function Landing() {
 
             <article className={css.sellingPoint}>
               <div className={css.iconWrapper}>
-                <PowerIcon className={css.icon} />
+                <BanknotesIcon className={css.icon} />
               </div>
 
               <div>
@@ -95,7 +99,7 @@ function Landing() {
 
             <article className={css.sellingPoint}>
               <div className={css.iconWrapper}>
-                <PowerIcon className={css.icon} />
+                <RocketLaunchIcon className={css.icon} />
               </div>
 
               <div>

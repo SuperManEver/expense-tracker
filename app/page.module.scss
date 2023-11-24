@@ -20,11 +20,6 @@ $icon-wrapper-size: 60px;
   color: var(--green-400-hex);
 }
 
-.content {
-  /* max-width: var(--max-width);
-  margin: 0 auto; */
-}
-
 .heroSection {
   margin-bottom: 3rem;
   display: grid;
@@ -68,7 +63,7 @@ $icon-wrapper-size: 60px;
     letter-spacing: 0.025rem;
     width: 70%;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0 auto 2.65rem;
   }
 
   .sellingPointsContainer {
