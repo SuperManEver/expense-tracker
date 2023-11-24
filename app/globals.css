@@ -6,6 +6,7 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --font-main: 'Sarabun';
+  --font-size: 16px;
 
   --foreground-hex: #eef3ec;
   --background-start-rgb: 214, 219, 220;
@@ -14,22 +15,10 @@
   --grey-300-hex: #979cad;
   --grey-500-hex: #767b8b;
   --grey-700-hex: #62615e;
+  --grey-800-hex: #454543;
   --green-300-hex: #a3e0b5;
   --green-400-hex: #3eb961;
   --green-600-hex: #089625;
-
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
@@ -69,6 +58,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: var(--foreground-hex);
+  font-size: var(--font-size);
+
   /* font-family: var(--font-main); */
 }
 

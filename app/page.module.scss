@@ -1,0 +1,49 @@
+.pageContent {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.title {
+  color: var(--green-400-hex);
+}
+
+.content {
+  /* max-width: var(--max-width);
+  margin: 0 auto; */
+}
+
+.heroSection {
+  display: grid;
+  grid-template-columns: 55% 45%;
+
+  .title {
+    width: 82%;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: var(--grey-800-hex);
+    margin-bottom: 1rem;
+
+    .hightlight {
+      display: block;
+      font-weight: bold;
+      color: var(--green-400-hex);
+    }
+  }
+
+  .text {
+    color: var(--grey-700-hex);
+    margin-bottom: 1rem;
+  }
+}

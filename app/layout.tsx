@@ -6,7 +6,7 @@ import { ClerkProvider } from '@clerk/nextjs'
 
 // styles
 import './globals.css'
-import css from './page.module.css'
+import css from './page.module.scss'
 
 const inter = Dosis({ subsets: ['latin'] })
 
