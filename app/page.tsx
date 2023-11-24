@@ -1,16 +1,12 @@
-// vendor
-import { auth } from '@clerk/nextjs'
-
 // ui
 import Navbar from '@/app/components/navbar/main-navbar'
 import Button from '@/app/components/ui/button'
+import Image from 'next/image'
 
 // styles
 import css from './page.module.scss'
 
 function Landing() {
-  const { userId } = auth()
-
   return (
     <section>
       <header className={css.header}>
@@ -34,7 +30,15 @@ function Landing() {
           </footer>
         </div>
 
-        <div>Image section</div>
+        <div>
+          <Image
+            src="/landing-hero-image.jpg"
+            width="450"
+            height="370"
+            style={{ maxWidth: '100%', height: 'auto' }}
+            alt="Picture of the author"
+          />
+        </div>
       </article>
     </section>
   )
