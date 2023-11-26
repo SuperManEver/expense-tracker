@@ -11,10 +11,10 @@ const createNewUser = async () => {
     },
   })
 
-  console.log('--------------------------------------------------')
-  console.log('matched user: ', match)
-  console.log('--------------------------------------------------')
-
+  // If it is a brand new user we should do all required initialization
+  // like
+  //  -- create a new user
+  //  -- create stripe account and so on
   if (!match && user) {
     await prisma.user.create({
       data: {
@@ -28,9 +28,9 @@ const createNewUser = async () => {
 }
 
 const NewUser = async () => {
-  // await createNewUser()
+  await createNewUser()
 
-  return <div>...loading</div>
+  return <div>...Loading</div>
 }
 
 export default NewUser

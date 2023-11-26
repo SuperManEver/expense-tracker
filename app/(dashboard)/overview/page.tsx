@@ -1,5 +1,5 @@
 function OverviewPage() {
-  return <div>OverviewPage</div>
+  return <div>Dashboard Main Page</div>
 }
 
 export default OverviewPage
