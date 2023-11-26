@@ -1,0 +1,15 @@
+.root {
+  height: 100vh;
+
+  .header {
+    padding-top: 1.4rem;
+    margin: 0 1rem 5rem;
+  }
+}
+
+$icon-size: 16px;
+
+.backIcon {
+  width: $icon-size;
+  height: $icon-size;
+}
