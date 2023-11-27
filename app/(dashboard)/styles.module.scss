@@ -7,7 +7,7 @@ $nav-item-icon-size: 16px;
 }
 
 .sidebar {
-  background-color: var(--green-400-hex);
+  background-color: var(--green-ui-500);
 }
 
 .navigation {
@@ -26,7 +26,7 @@ $nav-item-icon-size: 16px;
 
   &.active {
     border-radius: 4px;
-    background-color: var(--green-350-hex);
+    background-color: var(--green-ui-400);
   }
 
   .icon {

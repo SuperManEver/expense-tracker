@@ -21,6 +21,23 @@
   --green-400-hex: #3eb961;
   --green-600-hex: #089625;
 
+  /* 
+  
+    https://coolors.co/palette/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15
+  */
+
+  /* new colors */
+
+  --green-ui-100: #d8f3dc;
+  --green-ui-200: #b7e4c7;
+  --green-ui-300: #95d5b2;
+  --green-ui-400: #74c69d;
+  --green-ui-500: #52b788;
+  --green-ui-600: #40916c;
+  --green-ui-700: #2d6a4f;
+  --green-ui-800: #1b4332;
+  --green-ui-900: #081c15;
+
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
   --tile-border: conic-gradient(
