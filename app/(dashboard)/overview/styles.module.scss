@@ -1,0 +1,9 @@
+.root {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: minmax(210px, 1fr) 9fr;
+}
+
+.sidebar {
+  background-color: var(--green-400-hex);
+}
