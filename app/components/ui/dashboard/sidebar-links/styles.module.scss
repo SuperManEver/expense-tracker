@@ -1,0 +1,31 @@
+$nav-item-icon-size: 16px;
+
+.navigation {
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.24rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  border: 1px solid transparent;
+
+  &.active {
+    border-radius: 4px;
+    background-color: var(--green-ui-400);
+  }
+
+  .icon {
+    width: $nav-item-icon-size;
+    height: $nav-item-icon-size;
+  }
+
+  .title {
+    margin-left: 2px;
+    font-size: 1.2rem;
+  }
+}
