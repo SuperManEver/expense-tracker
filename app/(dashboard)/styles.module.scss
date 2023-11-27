@@ -1,3 +1,5 @@
+$nav-item-icon-size: 16px;
+
 .root {
   display: grid;
   height: 100vh;
@@ -6,4 +8,34 @@
 
 .sidebar {
   background-color: var(--green-400-hex);
+}
+
+.navigation {
+  padding: 1.6rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.24rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  border: 1px solid transparent;
+
+  &.active {
+    border-radius: 4px;
+    background-color: var(--green-350-hex);
+  }
+
+  .icon {
+    width: $nav-item-icon-size;
+    height: $nav-item-icon-size;
+  }
+
+  .title {
+    margin-left: 2px;
+    font-size: 1.2rem;
+  }
 }
