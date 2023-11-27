@@ -18,7 +18,7 @@ import css from './page.module.scss'
 
 function Landing() {
   const { userId } = auth()
-  const href = userId ? '/overview' : '/new-user'
+  const href = userId ? '/dashboard' : '/new-user'
   const title = userId ? 'Dashboard' : 'Get Started'
 
   return (

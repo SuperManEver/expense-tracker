@@ -10,7 +10,7 @@ import css from './styles.module.css'
 
 function MainNavbar() {
   const { userId } = auth()
-  const href = userId ? '/overview' : '/new-user'
+  const href = userId ? '/dashboard' : '/new-user'
   const title = userId ? 'Dashboard' : 'Get Started'
 
   return (

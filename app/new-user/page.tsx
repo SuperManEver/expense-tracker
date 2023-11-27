@@ -24,7 +24,7 @@ const createNewUser = async () => {
     })
   }
 
-  redirect('/overview')
+  redirect('/dashboard')
 }
 
 const NewUser = async () => {

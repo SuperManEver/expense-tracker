@@ -1,6 +1,9 @@
+'use client'
+
 // vendor
 import React from 'react'
 import cn from 'clsx'
+import { usePathname } from 'next/navigation'
 
 // ui
 import Link from 'next/link'
@@ -13,27 +16,39 @@ import {
 // styles
 import css from './styles.module.scss'
 
-export default function index() {
+const links = [
+  { name: 'Home', href: '/dashboard', icon: ChartBarIcon },
+  {
+    name: 'Expenses',
+    href: '/dashboard/expenses',
+    icon: BanknotesIcon,
+  },
+  { name: 'Categories', href: '/dashboard/categories', icon: FolderOpenIcon },
+]
+
+function SidebarLinks() {
+  const pathname = usePathname()
+
   return (
     <ul className={css.navigation}>
-      <Link href="/overview">
-        <div className={cn(css.navItem, css.active)}>
-          <ChartBarIcon className={css.icon} />
-          <p className={css.title}>Home</p>
-        </div>
-      </Link>
-      <Link href="/expenses">
-        <div className={css.navItem}>
-          <BanknotesIcon className={css.icon} />
-          <p className={css.title}>Expenses</p>
-        </div>
-      </Link>
-      <Link href="/categories">
-        <div className={css.navItem}>
-          <FolderOpenIcon className={css.icon} />
-          <p className={css.title}>Categories</p>
-        </div>
-      </Link>
+      {links.map((link) => {
+        const LinkIcon = link.icon
+
+        return (
+          <Link key={link.href} href={link.href}>
+            <div
+              className={cn(css.navItem, {
+                [css.active]: link.href === pathname,
+              })}
+            >
+              <LinkIcon className={css.icon} />
+              <p className={css.title}>{link.name}</p>
+            </div>
+          </Link>
+        )
+      })}
     </ul>
   )
 }
+
+export default SidebarLinks
