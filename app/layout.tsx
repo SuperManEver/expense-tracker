@@ -1,14 +1,13 @@
 // vendor
 import type { Metadata } from 'next'
-import { Dosis } from 'next/font/google'
-import clsx from 'clsx'
+import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 
 // styles
 import './globals.css'
 import css from './page.module.scss'
 
-const inter = Dosis({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',

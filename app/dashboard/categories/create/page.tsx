@@ -2,12 +2,12 @@ import React from 'react'
 
 import css from './styles.module.scss'
 
-function ExpensesPage() {
+function CreateCategoryPage() {
   return (
     <div className={css.root}>
-      <h3>Expenses</h3>
+      <h3>Create Category</h3>
     </div>
   )
 }
 
-export default ExpensesPage
+export default CreateCategoryPage
