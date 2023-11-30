@@ -1,0 +1,14 @@
+.root {
+  margin: 0.8rem 0.8rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  background-color: var(--green-ui-300);
+
+  display: flex;
+  align-items: center;
+
+  .userName {
+    margin-left: 0.4rem;
+    color: var(--green-ui-800);
+  }
+}
