@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 
 // styles
+import './reset.css'
 import './globals.css'
 import css from './page.module.scss'
 
