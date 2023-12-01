@@ -49,3 +49,38 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   transform: translateY(0);
 }
+
+/* 'primary' | 'secondary' | 'success' | 'danger' | 'light' */
+
+.root.primary {
+  background-color: var(--green-ui-600);
+  color: white;
+}
+
+.root.secondary {
+  background-color: var(--grey-300-hex);
+  color: white;
+}
+
+.root.success {
+  background-color: var(--green-ui-500);
+  color: white;
+}
+
+.root.danger {
+  background-color: var(--color-red-500);
+  color: white;
+}
+
+.root.light {
+  background-color: #f8f9fa;
+  color: #000;
+  border: 1px solid transparent;
+
+  &:hover,
+  &:active {
+    color: #000;
+    background-color: #c6c7c8;
+    border-color: #babbbc;
+  }
+}
