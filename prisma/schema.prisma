@@ -19,18 +19,47 @@ model User {
   clerkId  String         @unique
   email    String         @unique
   expenses ExpenseEntry[]
+  Category Category[]
 }
 
 model ExpenseEntry {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  value     Decimal  @default(0)
 
   // relations
   userId String
   user   User   @relation(fields: [userId], references: [id])
 
-  value Decimal @default(0)
+  categoryId String
+  Category   Category? @relation(fields: [categoryId], references: [id])
+
+  commonCategoryId String?
+  CommonCategory   CommonCategory? @relation(fields: [commonCategoryId], references: [id])
 
   @@unique([userId, id])
+}
+
+model CommonCategory {
+  id   String @id @default(uuid())
+  name String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  expenses ExpenseEntry[]
+}
+
+model Category {
+  id   String @id @default(uuid())
+  name String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  expenses ExpenseEntry[]
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id])
 }
