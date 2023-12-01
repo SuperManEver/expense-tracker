@@ -2,8 +2,8 @@
 import css from './styles.module.scss'
 
 // ui
-import Links from '@/app/components/ui/dashboard/sidebar-links'
-import UserInfo from '@/app/components/ui/dashboard/user-info'
+import Links from '@/app/components/dashboard/sidebar-links'
+import UserInfo from '@/app/components/dashboard/user-info'
 
 interface IProps {
   children: React.ReactNode
