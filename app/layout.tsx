@@ -1,6 +1,13 @@
 // vendor
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import {
+  Inter,
+  Dosis,
+  Jost,
+  Hind,
+  Encode_Sans,
+  IBM_Plex_Sans,
+} from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 
 // styles
@@ -8,7 +15,7 @@ import './reset.css'
 import './globals.css'
 import css from './page.module.scss'
 
-const inter = Inter({ subsets: ['latin'] })
+const font = IBM_Plex_Sans({ subsets: ['latin'], weight: ['400', '700'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,7 +30,7 @@ async function RootLayout({ children }: IProps) {
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={inter.className}>
+        <body className={font.className}>
           <main className={css.main}>{children}</main>
         </body>
       </html>
