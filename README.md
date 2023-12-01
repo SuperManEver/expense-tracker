@@ -21,3 +21,9 @@ Create a migration after data schema has changed and sync it with Database
 ```
 npx prisma migrate dev --name init
 ```
+
+Seed database with common categories
+
+```
+npx prisma db seed
+```
